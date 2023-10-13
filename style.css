@@ -8,6 +8,13 @@
     box-sizing: border-box;
     font-family: MainFont;
 }
+body{
+    background-color: #e6f7ff !important;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
 i{
     cursor: pointer;
 }
@@ -21,6 +28,7 @@ i{
     align-items: center;
     justify-content: space-between;
     padding: 10px 10px;
+    background-color: white;
     border-bottom: 1px solid #dddd;
 }
 .mainNav h1{
@@ -41,6 +49,7 @@ i{
     align-items: center;
     justify-content: space-between;
     padding: 10px 8px ;
+    background-color: white;
 }
 .userPersonalData{
     display: flex;
@@ -74,10 +83,11 @@ i{
     /* color: rgb(43, 43, 148); */
 }
 .lastRow{
-    border-top: none !important;
+    border-bottom: 1px solid #ddd;
     padding: 10px 10px;
     width: 100%;
     position: relative;
+    background-color: white;
 }
 .lastRow input{
     width: 100%;
@@ -89,4 +99,56 @@ i{
     top: 20px;
     left: 20px;
     font-size: 20px;
+}
+.mainHeader{
+    display: flex;
+    padding: 15px 20px;
+    justify-content: space-between;
+}
+.mainHeader h2:last-child{
+    cursor: pointer;
+}
+.messageBoxHolder{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px;
+    width: 100%;
+    gap: 10px;
+}
+.messageBox{
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 5px 20px;
+    background-color: whitesmoke;
+    border-bottom: 1px solid #ddd;
+}
+.messageBox img{
+    height: 35px;
+    border-radius: 50%;
+}
+.messageBox .leftSide{
+    display: flex;
+    align-self: center;
+    gap: 10px;
+}
+.messageBox .messageBoxNotes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.messageBox .userProfile{
+    display: flex;
+    align-items: center;
+}
+.messageBox .messageBoxNotes .username{
+    font-weight: bold;
+}
+.messageBox .messageBoxNotes .latestText{
+    font-size: 13px;
+    color: #353333;
+    font-weight: lighter;
 }
