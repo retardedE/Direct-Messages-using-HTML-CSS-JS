@@ -1,0 +1,92 @@
+@font-face {
+    font-family: MainFont ;
+    src: url(assets/fonts/Poppins-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: MainFont;
+}
+i{
+    cursor: pointer;
+}
+.directHeader{
+    display: flex;
+    flex-direction: column;
+}
+.mainNav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    border-bottom: 1px solid #dddd;
+}
+.mainNav h1{
+    color: rgb(43, 43, 148);
+}
+.mainNavIcons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.mainNavIcons i{
+    color: rgb(43, 43, 148);
+    font-size: 20px;
+}
+.firstRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 8px ;
+}
+.userPersonalData{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.userPersonalData .arrowBack i{
+    font-size: 22px;
+}
+.userPersonalData .arrowBack{
+    display: flex;
+    align-items: center;
+}
+.userID{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.userID p{
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.newMessageIcon{
+    margin: 0 2px;
+}
+.newMessageIcon i{
+    font-size: 20px;
+    /* color: rgb(43, 43, 148); */
+}
+.lastRow{
+    border-top: none !important;
+    padding: 10px 10px;
+    width: 100%;
+    position: relative;
+}
+.lastRow input{
+    width: 100%;
+    padding: 10px 30px;
+    outline: none;
+}
+.lastRow .searchBox i{
+    position: absolute ;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+}
