@@ -4,9 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <nav class="directHeader2">
+        <div class="mainNav2">
+            <h1>FriendConnect</h1>
+            <div class="mainNavIcons">
+                <i class='bx bx-search'></i>
+                <i class='bx bxs-user'></i>
+                <i class='bx bx-send'></i>
+            </div>
+        </div>
+        <div class="userDataRow">
+            <div class="rowLeft">
+                <div class="userProfileImage">
+                    <a href="index.html"><i class='bx bx-chevron-left' ></i></a>
+                    <img src="assets/43.jpg" alt="img">
+                </div>
+                <div class="profileDetails">
+                    <p>hamill1980ton</p>
+                    <p>william</p>
+                </div>
+            </div>
+            <div class="rowRight">
+                <i class='bx bx-phone-call'></i>
+            </div>
+        </div>
+    </nav>    
+    <main class="chatField">
+        <div class="messageHolder">
+                <div class="sentText">
+                    <div class="textContent">
+                    <p class="text">Hello! How can I help you?</p>
+                    <div class="details">
+                        <p class="time">7:40</p>
+                        <p class="status">read</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="deliveredText">
+                    <div class="textContent">
+                        <p class="text">Hi, I need to fix my phone</p>
+                        <div class="details">
+                            <p class="time">7:40</p>
+                            <p class="status">read</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </main>
+    <footer class="typeInputField">
+        <div class="inputSection">
+            <i class='bx bxs-camera'></i>
+            <input class="typeInput" type="text" placeholder="Type your message..." >
+            <i id="sendButton" class='bx bx-send'></i>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
