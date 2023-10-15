@@ -236,6 +236,7 @@ i{
     background-color: white;
     padding: 10px 15px;
     border-radius: 5px;
+    max-width: 800px !important;
 
 }
 .deliveredText{
@@ -256,8 +257,8 @@ i{
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 5px;
-    display: inline-block;
-    
+    max-width: 800px !important;
+    word-wrap: break-word;
 }
 .time{
     font-size: 14px;
