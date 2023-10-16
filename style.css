@@ -125,7 +125,7 @@ i{
     justify-content: space-between;
     cursor: pointer;
     padding: 5px 20px;
-    background-color: whitesmoke;
+    background-color: rgb(255, 255, 255);
     border-bottom: 1px solid #ddd;
 }
 .messageBox img{
@@ -242,11 +242,13 @@ i{
 .deliveredText{
     display: flex;
     justify-content: end;
+    /* max-width: 800px !important; */
 }
 .deliveredText .textContent{
     background-color: white;
     padding: 10px 15px;
     border-radius: 5px;
+    max-width: 800px !important;
 }
 .textContent .details{
     display: flex;
@@ -254,11 +256,12 @@ i{
     gap: 10px;
 }
 .text{
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     margin-bottom: 5px;
     max-width: 800px !important;
     word-wrap: break-word;
+    word-break: break-all;
 }
 .time{
     font-size: 14px;
@@ -302,4 +305,37 @@ i{
 }
 .typeInputField .inputSection i{
     font-size: 25px;
+}
+@media only screen and (max-width:1022px){
+    .text{
+        max-width: 650px !important;
+    }
+    .deliveredText .textContent{
+        max-width: 650px !important;
+    }
+    .sentText .textContent{
+        max-width: 650px !important;
+    }
+}
+@media only screen and (max-width:726px){
+    .text{
+        max-width: 350px !important;
+    }
+    .deliveredText .textContent{
+        max-width: 350px !important;
+    }
+    .sentText .textContent{
+        max-width: 350px !important;
+    }
+}
+@media only screen and (max-width:398px){
+    .text{
+        max-width: 250px !important;
+    }
+    .deliveredText .textContent{
+        max-width: 250px !important;
+    }
+    .sentText .textContent{
+        max-width: 250px !important;
+    }
 }
